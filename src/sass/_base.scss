@@ -1,0 +1,34 @@
+$primary-pink: hsl(322, 100%, 66%);
+$primary-light-pink: hsl(321, 100%, 78%);
+$primary-light-red: hsl(0, 100%, 63%);
+$neutral-dark-cyan: hsl(192, 100%, 9%);
+$neutral-pale-blue: hsl(207, 100%, 98%);
+
+@mixin flexcenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin button($color, $bg-color) {
+  color: $color;
+  background-color: $bg-color;
+  border-radius: 2.5rem;
+  border: none;
+  font-weight: 600;
+  font-size: 1em;
+  padding: 1rem 4rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", "Poppins", sans-serif;
+}
