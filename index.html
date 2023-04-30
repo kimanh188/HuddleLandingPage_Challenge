@@ -167,7 +167,13 @@
             newsletter. We’ll never send you spam or pass on your email address
           </p>
           <div class="email-input">
-            <input type="email" name="email" id="email" />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            />
             <button class="subscribe-btn">Subscribe</button>
           </div>
         </div>

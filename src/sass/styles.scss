@@ -17,6 +17,21 @@ nav {
     font-weight: 400;
     padding: 0.5rem 1.5rem;
     margin: 0;
+
+    &:hover {
+      color: $primary-light-pink;
+      border: 1px solid $primary-light-pink;
+    }
+  }
+}
+
+.start-btn {
+  @include button($neutral-pale-blue, $primary-pink);
+  font-size: 0.8rem;
+  padding: 1rem 3rem;
+
+  &:hover {
+    background-color: $primary-light-pink;
   }
 }
 
@@ -32,6 +47,16 @@ nav {
     font-family: "Poppins", sans-serif;
     margin-bottom: 2rem;
     color: $neutral-dark-cyan;
+  }
+
+  .start-btn {
+    @include button($neutral-pale-blue, $primary-pink);
+    font-size: 0.8rem;
+    padding: 1rem 3rem;
+
+    &:hover {
+      background-color: $primary-light-pink;
+    }
   }
 
   .hero-img {
@@ -87,12 +112,6 @@ nav {
       }
     }
   }
-}
-
-.start-btn {
-  @include button($neutral-pale-blue, $primary-pink);
-  font-size: 0.8rem;
-  padding: 1rem 3rem;
 }
 
 .goal {
@@ -159,6 +178,16 @@ footer {
     display: block;
     height: 2rem;
     border-radius: 0.6em;
+
+    &:invalid {
+      border-color: $primary-light-red;
+
+      &::before {
+        content: "Check your email please";
+        color: $primary-light-red;
+        font-size: 12px;
+      }
+    }
   }
 
   .subscribe-btn {
@@ -167,6 +196,10 @@ footer {
     border-radius: 0.6rem;
     margin: 1rem 0 3rem 0;
     float: right;
+
+    &:hover {
+      background-color: $primary-light-pink;
+    }
   }
 
   .contact-info {
