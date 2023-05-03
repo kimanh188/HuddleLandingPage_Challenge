@@ -1,0 +1,368 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", "Poppins", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10rem;
+  margin: 2.5rem 2rem 0;
+}
+nav .logo {
+  width: 6rem;
+}
+nav .try-it-btn {
+  color: hsl(322, 100%, 66%);
+  background-color: white;
+  border-radius: 2.5rem;
+  border: none;
+  font-weight: 600;
+  font-size: 1em;
+  padding: 1rem 4rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  cursor: pointer;
+  border: 1px solid hsl(322, 100%, 66%);
+  font-weight: 400;
+  padding: 0.5rem 1.5rem;
+  margin: 0;
+}
+nav .try-it-btn:hover {
+  color: hsl(321, 100%, 78%);
+  border: 1px solid hsl(321, 100%, 78%);
+}
+
+.start-btn {
+  color: hsl(207, 100%, 98%);
+  background-color: hsl(322, 100%, 66%);
+  border-radius: 2.5rem;
+  border: none;
+  font-weight: 600;
+  font-size: 1em;
+  padding: 1rem 4rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  padding: 1rem 3rem;
+}
+.start-btn:hover {
+  background-color: hsl(321, 100%, 78%);
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  margin: 2.5rem 2rem 0;
+}
+.hero h1 {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 2rem;
+  color: hsl(192, 100%, 9%);
+}
+.hero .start-btn {
+  color: hsl(207, 100%, 98%);
+  background-color: hsl(322, 100%, 66%);
+  border-radius: 2.5rem;
+  border: none;
+  font-weight: 600;
+  font-size: 1em;
+  padding: 1rem 4rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  padding: 1rem 3rem;
+}
+.hero .start-btn:hover {
+  background-color: hsl(321, 100%, 78%);
+}
+.hero .hero-img {
+  width: 100%;
+}
+.hero .spotlight-container {
+  margin: 4rem auto;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.hero .spotlight-container .spotlight {
+  padding: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hero .spotlight-container .spotlight .number {
+  font-size: 3.052rem;
+  font-weight: 800;
+  position: relative;
+}
+.hero .spotlight-container .spotlight .number-1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 2rem;
+  height: 1.5rem;
+  background-image: url("../../images/icon-communities.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero .spotlight-container .spotlight .number-2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 2rem;
+  height: 1.5rem;
+  background-image: url("../../images/icon-messages.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero .spotlight-container .spotlight .text {
+  color: gray;
+}
+
+.goal {
+  width: 100%;
+  font-size: 0;
+}
+.goal .goal-text {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1rem;
+}
+.goal .goal-text p {
+  font-size: 0.9rem;
+  padding: 1rem 0;
+}
+.goal .illustration {
+  width: 90%;
+}
+.goal .goal-container {
+  background-color: hsl(207, 100%, 98%);
+}
+.goal .goal-p {
+  padding: 6rem 0 4rem 0;
+}
+
+h2 {
+  color: hsl(192, 100%, 9%);
+}
+
+.border img {
+  width: 100%;
+  display: block;
+}
+
+.action-call {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 5rem auto;
+}
+
+footer {
+  background-color: hsl(192, 100%, 9%);
+  color: hsl(207, 100%, 98%);
+  padding: 4rem 3rem 0;
+}
+footer h3 {
+  text-transform: uppercase;
+}
+footer p {
+  padding: 1em 0;
+  font-size: 0.85em;
+}
+footer input {
+  width: 100%;
+  display: block;
+  height: 2rem;
+  border-radius: 0.6em;
+}
+footer input:invalid {
+  border-color: hsl(0, 100%, 63%);
+}
+footer input:invalid::before {
+  content: "Check your email please";
+  color: hsl(0, 100%, 63%);
+  font-size: 12px;
+}
+footer .subscribe-btn {
+  color: hsl(207, 100%, 98%);
+  background-color: hsl(322, 100%, 66%);
+  border-radius: 2.5rem;
+  border: none;
+  font-weight: 600;
+  font-size: 1em;
+  padding: 1rem 4rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border-radius: 0.6rem;
+  margin: 1rem 0 3rem 0;
+  float: right;
+}
+footer .subscribe-btn:hover {
+  background-color: hsl(321, 100%, 78%);
+}
+footer .contact-info .logo img {
+  margin: 1em 0;
+}
+footer .contact-info .icon {
+  padding-right: 1em;
+}
+footer .contact-info {
+  clear: both;
+}
+footer .contact-info .social-media {
+  display: flex;
+  gap: 1em;
+  padding: 1.5rem 0;
+  cursor: pointer;
+}
+footer .contact-info .social-media i {
+  font-size: 1.563rem;
+}
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+footer .attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 768px) {
+  nav,
+  .hero {
+    margin: 4rem 3.5rem 0;
+  }
+  nav .logo {
+    width: 10rem;
+  }
+  nav .try-it-btn {
+    color: hsl(322, 100%, 66%);
+    background-color: white;
+    border-radius: 2.5rem;
+    border: none;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 1rem 4rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    cursor: pointer;
+    border: 1px solid hsl(322, 100%, 66%);
+    margin: 0;
+  }
+  .hero {
+    width: 80%;
+    margin: auto;
+  }
+  .hero h1 {
+    margin-top: 5rem;
+    font-size: 3.052rem;
+    font-weight: 700;
+  }
+  .hero p {
+    font-weight: 600;
+    font-size: 1.25rem;
+    width: 55%;
+  }
+  .hero .start-btn {
+    color: hsl(207, 100%, 98%);
+    background-color: hsl(322, 100%, 66%);
+    border-radius: 2.5rem;
+    border: none;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 1rem 4rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    cursor: pointer;
+  }
+  .hero .spotlight-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: none;
+  }
+  .hero .spotlight-container .number {
+    font-size: 7.451rem;
+  }
+  .goal .goal-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    padding: 0 3.5rem 0 4.5rem;
+  }
+  .goal .goal-text h2 {
+    font-weight: 700;
+    font-size: 2.441rem;
+  }
+  .goal .goal-text p {
+    font-size: 1.25rem;
+  }
+  .goal .illustration {
+    padding: 3rem;
+  }
+  .goal .goal-container .goal-img {
+    order: 2;
+  }
+  .goal-p {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  footer .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  footer .grid-container .newsletter {
+    order: 2;
+    width: 90%;
+  }
+  footer .grid-container .newsletter p {
+    width: 65%;
+  }
+  footer .grid-container .newsletter .email-input {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2em;
+    padding: 1em 0;
+  }
+  footer .grid-container .newsletter .email-input input {
+    width: 60%;
+  }
+  footer .grid-container .newsletter .email-input .subscribe-btn {
+    padding: 0.5em 2em;
+    margin: 0;
+  }
+  footer .grid-container .newsletter,
+  footer .grid-container .contact-info {
+    padding: 3rem;
+    margin: auto;
+  }
+  footer .grid-container .contact-info {
+    width: 60%;
+  }
+}/*# sourceMappingURL=styles.css.map */

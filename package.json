@@ -4,7 +4,7 @@
   "description": "Frontend Mentor Challenge",
   "main": "index.js",
   "scripts": {
-    "compile": " sass src/sass/styles.scss src/css/styles.css --no-source-map --watch"
+    "compile": " sass src/sass/landingpage.styles.scss src/css/landingpage.styles.css --no-source-map --watch"
   },
   "repository": {
     "type": "git",
