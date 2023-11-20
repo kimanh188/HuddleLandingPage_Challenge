@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://kimanh188.github.io/HuddleLandingPage_Challenge/)
+- [Live Site URL](https://kimanh188.github.io/HuddleLandingPage_Challenge/)
 
 ## My process
 
